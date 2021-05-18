@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    Name: <input type="text" id="myText" name="fname" value="Red Valvet Cake"><br>
+
+    <br>
+    <br> Age : <input type="number" id="myAge" name="fage" value="18"><br>
+
+
+    <p>Click the first button to display the value of the name attribute of the text field and asecond button to display Age.</p>
+
+
+    <button onclick="myFunction()">Try it</button>
+    <button onclick="ageFunction()">Click to View Age</button>
+
+
+    <p id="demo"></p>
+    <p id="AgeDemo"></p>
+    <p> Welcome to My Application, I Hope You ar having good time !!!!</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myText").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+
+        function ageFunction() {
+            var y = document.getElementById("myAge").value;
+            document.getElementById("AgeDemo").innerHTML = y;
+        }
+    </script>
+
+</body>
+
+</html>
